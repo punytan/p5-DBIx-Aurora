@@ -1,5 +1,5 @@
 {
-   "abstract" : "Blah blah blah",
+   "abstract" : "DBI handler specialized in Amazon Aurora",
    "author" : [
       "punytan <punytan@gmail.com>"
    ],
@@ -37,16 +37,32 @@
       },
       "runtime" : {
          "requires" : {
-            "perl" : "5.008005"
+            "DBD::mysql" : "4.037",
+            "DBIx::Handler" : "0.09",
+            "List::Util" : "1.47",
+            "perl" : "5.022000"
          }
       },
       "test" : {
          "requires" : {
-            "Test::More" : "0.96"
+            "Test::Docker::MySQL" : "0.02",
+            "Test::More" : "0.96",
+            "Test::Pod" : "1.51"
          }
       }
    },
    "release_status" : "stable",
+   "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/punytan/p5-DBIx-Aurora/issues"
+      },
+      "homepage" : "https://github.com/punytan/p5-DBIx-Aurora",
+      "repository" : {
+         "type" : "git",
+         "url" : "https://github.com/punytan/p5-DBIx-Aurora.git",
+         "web" : "https://github.com/punytan/p5-DBIx-Aurora"
+      }
+   },
    "version" : "0.01",
    "x_serialization_backend" : "Cpanel::JSON::XS version 3.0225"
 }
