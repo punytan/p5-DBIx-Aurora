@@ -6,5 +6,6 @@ requires 'List::Util',    '1.47';
 
 on test => sub {
     requires 'Test::More', '0.96';
+    requires 'Test::Pod',  '1.51';
     requires 'Test::Docker::MySQL', '0.02';
 };
